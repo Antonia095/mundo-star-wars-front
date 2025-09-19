@@ -1,0 +1,82 @@
+h1 { 
+  font-weight: bold;
+  color: #ffe066;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(20,40,75,0.08);
+    padding: 0;
+    margin: 24px auto 32px auto;
+    max-width: 700px;
+    height: 56px;
+    border: 1px solid #e0e0e0;
+}
+
+.search-select {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0 18px;
+  height: 100%;
+  border-radius: 12px 0 0 12px;
+  background: transparent;
+  flex: 1;
+  min-width: 120px;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0 18px;
+  height: 100%;
+  flex: 4;
+  background: transparent;
+  color: #333;
+}
+
+.search-btn {
+  border: none;
+  background: #afafb1;
+  color: #333;
+  font-size: 1.1rem;
+  padding: 0 28px;
+  height: 100%;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+  border-left: 1px solid #e0e0e0;
+}
+
+.search-btn svg {
+  display: block;
+  margin: 0 auto;
+  width: 22px;
+  height: 22px;
+  stroke: #333;
+  transition: stroke 0.2s;
+  stroke-width: 3;
+  fill: none;
+  object-fit: contain;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.search-btn:disabled svg {
+  stroke: #202020;
+}
+
+.search-btn:hover svg {
+  stroke: #464442;
+}
