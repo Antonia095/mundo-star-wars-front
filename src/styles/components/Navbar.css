@@ -5,7 +5,7 @@
   align-items: center;
   width: 100%;
   height: 0px;
-  gap: 60px;
+  gap: 200px;
   background: transparent !important;
   box-shadow: none;
 }
@@ -21,7 +21,7 @@
 .navbar-pages {
   display: flex;
   list-style: none;
-  gap: 150px;
+  gap: 40px;
   margin: 0;
   padding: 0;
   margin-left: 490px;
@@ -60,7 +60,7 @@
 }
 
 .navbar-btn {
-  margin-left: 90px;
+  margin-left: 10px;
 }
 
 .navbar-btn a {

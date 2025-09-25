@@ -12,6 +12,7 @@ const Navbar = () => {
       <ul className="navbar-pages">
         <li><Link to="/">Início</Link></li>
         <li><Link to="/sobre">Sobre</Link></li>
+        <li className='navbar-btn'><Link to="/login">Login</Link></li>
         <li className='navbar-btn'><Link to="/cadastro">Cadastra-se</Link></li>
       </ul>
     </nav>
