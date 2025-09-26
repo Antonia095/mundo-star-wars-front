@@ -1,7 +1,8 @@
-
 import React, { useState } from 'react';
 import Card from '../components/Card';
 import { useSwapiSearch } from '../hooks/useBuscarItems';
+import { useAuth } from '../hooks/useAuth';
+import { useNavigate } from 'react-router-dom';
 import '../styles/pages/Home.css';
 
 const categorias = [
@@ -15,6 +16,8 @@ const Home = () => {
   const [categoria, setCategoria] = useState('');
   const [termo, setTermo] = useState('');
   const { resultados, loading, erro, buscar } = useSwapiSearch();
+  const { auth } = useAuth();
+  const navigate = useNavigate();
 
   const handleCategoriaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setCategoria(e.target.value);
@@ -88,6 +91,13 @@ const Home = () => {
           />
         ))}
       </div>
+      <button
+        className='itens-btn'
+        onClick={() => navigate('/itens')}
+        disabled={!auth}
+      >
+        Acessar Itens Privados
+      </button>
     </div>
   );
 };

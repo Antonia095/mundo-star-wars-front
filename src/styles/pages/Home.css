@@ -91,3 +91,26 @@ h1 {
 .search-btn:hover svg {
   stroke: #464442;
 }
+
+.itens-btn {
+  margin: 0 auto 2rem auto;
+  display: block;
+  padding: 12px 32px;
+  border-radius: 8px;
+  background: #ffe066;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(20,40,75,0.08);
+  transition: background 0.2s;
+}
+.itens-btn:disabled {
+  background: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+.itens-btn:hover:not(:disabled) {
+  background: #ffe799;
+}
