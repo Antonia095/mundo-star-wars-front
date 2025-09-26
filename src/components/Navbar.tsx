@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/mundo-star-wars.png';
+import logo from '../assets/mundoStarWars.png';
 import '../styles/components/Navbar.css';
 
 const Navbar = () => {
@@ -13,7 +13,6 @@ const Navbar = () => {
         <li><Link to="/">Início</Link></li>
         <li><Link to="/sobre">Sobre</Link></li>
         <li className='navbar-btn'><Link to="/login">Login</Link></li>
-        <li className='navbar-btn'><Link to="/cadastro">Cadastra-se</Link></li>
       </ul>
     </nav>
   );
