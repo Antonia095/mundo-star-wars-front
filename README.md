@@ -59,4 +59,4 @@ src/
 
 ---
 
-Desenvolvido por Antonia095
+Desenvolvido por Antonia Maciel
