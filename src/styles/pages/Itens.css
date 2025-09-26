@@ -1,0 +1,25 @@
+.itens-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 24px 16px;
+  background: #bec0c2;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #0001;
+}
+.itens-container h2 {
+  text-align: center;
+  color: #02677e;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.itens-container p {
+  text-align: center;
+  color: #d3cdcd;
+  margin-bottom: 24px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
