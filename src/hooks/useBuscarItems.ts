@@ -12,13 +12,20 @@ export function useSwapiSearch() {
     setErro('');
     setResultados([]);
     let endpoint = '';
-    if (categoria === 'filme') endpoint = 'films';
-    else if (categoria === 'personagem') endpoint = 'people';
-    else if (categoria === 'planeta') endpoint = 'planets';
-    else {
-      setErro('Categoria inválida.');
-      setLoading(false);
-      return;
+     switch (categoria) {
+      case 'filme':
+        endpoint = 'films';
+        break;
+      case 'personagem':
+        endpoint = 'people';
+        break;
+      case 'planeta':
+        endpoint = 'planets';
+        break;
+      default:
+        setErro('Categoria inválida.');
+        setLoading(false);
+        return;
     }
     try {
       const data = await buscarItem(endpoint, termo);
