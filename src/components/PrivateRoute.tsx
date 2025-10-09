@@ -1,8 +1,9 @@
+import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { isAuthenticated } from '../services/mockAuthService';
+import { isAuthenticated } from '../services/mundoStarWarsApi';
 
 interface PrivateRouteProps {
-  children: JSX.Element;
+  children: React.ReactElement;
 }
 
 const PrivateRoute = ({ children }: PrivateRouteProps) => {
